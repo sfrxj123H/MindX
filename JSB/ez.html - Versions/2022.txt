@@ -1,0 +1,14 @@
+On the occasion of November 20, 2022, Anh Phong wishes the teachers good health, happiness
+fun and keep going by teaching. In this 'ez' folder there are still HTML pages that I spend a lot
+effort to create and there are 3 versions: 1; 1.1; 2. Hope the teachers support the HTML page
+because share part at the bottom of the page is for illustrative purposes only and does not
+require an internet connection. When 2023 comes, I will know how to send information from
+others to you using PHP language so larger versions will be able to share actual information
+and not illustrations anymore.
+
+Dịp ngày 20/11/2022, Anh Phong chúc các thầy cô mạnh khỏe, hạnh phúc, vui vẻ và tiếp tục đi
+theo công việc giảng dạy. Trong thư mục 'ez' này vẫn còn những trang HTML mà em rất tốn
+công sức để tạo ra và đang có 3 phiên bản: 1; 1.1; 2. Mong các thầy cô ủng hộ trang HTML vì
+phần chia sẻ ở dưới trang chỉ mang tính chất minh họa và không cần kết nối mạng. Có thể đến
+2023, em sẽ biết cách để gửi thông tin từ người khác đến em dùng bằng ngôn ngữ PHP vậy
+nên các phiên bản lớn hơn sẽ có thể chia sẻ thông tin thật sự và không phải là minh họa nữa.
