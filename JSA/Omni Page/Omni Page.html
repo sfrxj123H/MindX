@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>
-        Omni food
+        Omnifood
     </title>
     <style>
         #logo {
@@ -133,6 +133,11 @@
         function scroll(a, b) {
             window.scrollBy(a, b);
         }
+        function rate() {
+            if ((document.getElementById("r1").value.length > 0) && (document.getElementById("r2").value.length > 0)) {
+                document.getElementById("rate").value.submit()
+            }
+        }
     </script>
 </head>
 <body>
@@ -152,7 +157,7 @@
             <h1 class="main" style="top: 12cm; left: 10cm; position: absolute;">Goodbye junk food.</h1>
             <h1 class="main" style="top: 14.5cm; left: 10cm; position: absolute;">Hello super healthy meals.</h1>
             <div id="button">
-                <input type="button" value="I'm hungry" id="button1" style="top: 18cm; left: 10cm; position: absolute;" onclick="login()" />
+                <input type="button" value="I'm hungry" id="button1" style="top: 18cm; left: 10cm; position: absolute;" onclick="document.getElementById('pt4h1').scrollIntoView({behavior: 'smooth'}, true)" />
                 <input type="button" value="Show me more" id="button2" style="top: 18cm; left: 17cm; position: absolute;" onclick="document.getElementById('pt1').scrollIntoView({behavior: 'smooth'}, true)" />
             </div>
         </div>
@@ -287,14 +292,14 @@
         <div style="display: flex">
             <img src="Resources/customer-2.jpg" style="width: 15%" />
             <h2>
-                Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food<br />delivery here in Lisbon, but no onecomes even close to Omifood. Me and my family are so in love!
+                Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food<br />delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
             </h2>
         </div>
         <h3 style="text-align: right">Joana Silva&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
         <div style="display: flex">
             <img src="Resources/customer-3.jpg" style="width: 15%" />
             <h2>
-                I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and<br />ended up with Omnifood. Bestfood delivery service in the Bay Area. Keep up the great work!
+                I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and<br />ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
             </h2>
         </div>
         <h3 style="text-align: right">Milton Chapman&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
@@ -342,11 +347,11 @@
     </div>
     <div style="font-size: 25px; text-align: center">
         <h1>We're happy to hear from you!</h1>
-        <input type="text" placeholder="Name" style="border-radius: 15px; font-size: 25px" /><br /><br />
+        <input type="text" placeholder="Name" style="border-radius: 15px; font-size: 25px" id="r1" /><br /><br />
         <input type="text" placeholder="How did you find us?" style="border-radius: 15px; font-size: 25px" /><br /><br />
         <input type="checkbox" name="Newsletter" /> <label for="Newsletter">Newsletter</label><br /><br />
-        <input type="text" placeholder="Drop us a line!" style="border-radius: 15px; width: 500px; height: 100px; font-size: 25px" /><br /><br />
-        <label for="picture">Your profile picture</label> <input type="file" style="width: 300px; height: 300px; font-size: 25px" name="picture" /><br /><br />
+        <input type="text" placeholder="Drop us a line!" style="border-radius: 15px; width: 500px; height: 100px; font-size: 25px" id="r2" /><br /><br />
+        <input type="button" value="Send!" id="rate" onclick="rate()" style="border-radius: 15px; font-size: 25px" />
     </div>
 </body>
 </html>
