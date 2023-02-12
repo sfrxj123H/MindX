@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Register to Omni food
+    </title>
+</head>
+<body>
+    <div>
+        <h1>REGISTER TO OMNI FOOD</h1>
+        <br />
+        <form>
+            <input type="text" placeholder="Username" id="user" />
+            <br /><br />
+            <input type="password" placeholder="Create password" id="pass1" />
+            <br /><br />
+            <input type="password" placeholder="Confirm password" id="pass2" />
+            <br /><br />
+            <input type="email" placeholder="Email" id="mail" />
+            <br /><br />
+            <input type="button" value="SIGN UP" onclick="signup()" style="border-radius: 15px; background-color: aliceblue" />
+            <br />
+            <h1 style="color: navajowhite">Username must be at least 3 characters and password must be at least 6 letters</h1>
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    * {
+        font-family: 'Yu Gothic UI';
+        text-align: center;
+        font-size: 50px;
+    }
+    body {
+        background-image: url("Resources/hero.png");
+        background-size: cover
+    }
+    #user {
+        border-radius: 15px;
+        background-color: lightblue;
+    }
+    #pass1 {
+        border-radius: 15px;
+        background-color: palevioletred;
+    }
+    #pass2 {
+        border-radius: 15px;
+        background-color: lightgreen;
+    }
+    #mail {
+        border-radius: 15px;
+        background-color: lightyellow;
+    }
+    ::placeholder {
+        color: darkcyan;
+    }
+</style>
+<script>
+    function signup() {
+        if (((document.getElementById("user").value.length) >= 3) && ((document.getElementById("pass1").value.length) >= 6) && ((document.getElementById("pass2").value.length) >= 6) && ((document.getElementById("pass1").value) === (document.getElementById("pass2").value)) && ((document.getElementById("mail").value.length) >= 5)) {
+            window.location.assign("Omni Page.html?");
+        }
+    }
+</script>

@@ -1,4 +1,0 @@
-Cách đổi ngôn ngữ sang tiếng Việt(Change to Vietnamese language):
-1. Bấm vào 'Show options' ở bên trái dưới cùng
-2. Cài đặt sẽ hiện ra và ở phần 'Preferred language', đổi 'English ==> Vietnamese'
-3. Đóng lại cài đặt bằng cách bấm nút 'Hide options'

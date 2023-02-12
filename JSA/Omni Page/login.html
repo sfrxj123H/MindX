@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Log in to Omni food
+    </title>
+</head>
+<body>
+    <div>
+        <h1>LOG IN TO OMNI FOOD</h1>
+        <br /><br />
+        <form>
+            <input type="text" placeholder="Username/Email" id="user" />
+            <br /><br />
+            <input type="password" placeholder="Password" id="pass" />
+            <br /><br />
+            <input type="button" value="LOG IN" onclick="login()" style="border-radius: 15px; background-color: aliceblue" />
+            <br /><br />
+            <input type="button" value="Forgot password?" onclick="login()" style="border-radius: 15px; background-color: aliceblue" />
+            <br /><br />
+            <input type="button" value="New to Omni food? Register now!" onclick="signup()" style="border-radius: 15px; background-color: aliceblue" />
+            <br /><br />
+        </form>
+    </div>
+</body>
+</html>
+<style>
+    * {
+        font-family: 'Yu Gothic UI';
+        text-align: center;
+        font-size: 50px;
+    }
+    body {
+        background-image: url("Resources/hero.png");
+        background-size: cover
+    }
+    #user {
+        border-radius: 15px;
+        background-color: lightblue;
+    }
+    #pass {
+        border-radius: 15px;
+        background-color: palevioletred;
+    }
+    ::placeholder {
+        color: darkcyan;
+    }
+</style>
+<script>
+    function signup() {
+            window.location.assign("signup.html");
+    }
+    function login() {
+        if (((document.getElementById("user").value.length) >= 3) && ((document.getElementById("pass").value.length) >= 6)) {
+            window.location.assign("Omni Page.html?");
+        }
+    }
+</script>

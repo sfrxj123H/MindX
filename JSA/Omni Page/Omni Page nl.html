@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Omni food
+    </title>
+    <style>
+        #logo {
+            width: 10%;
+            height: auto;
+        }
+
+        #hero {
+            color: white;
+        }
+
+        .pos1 {
+            position: absolute;
+        }
+
+        #png1 {
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        #png2 {
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        #welcome {
+            color: white;
+            font-size: 30px;
+        }
+
+        #hero {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: left;
+        }
+
+        hr {
+            clear: both;
+            visibility: hidden;
+        }
+
+        * {
+            font-family: Calibri;
+        }
+
+        #button {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        #button1 {
+            background-color: orangered;
+            font-size: 40px;
+            border-radius: 15px;
+            border-color: orangered;
+            font-family: Gadugi;
+            color: lightpink;
+            font-weight: bold;
+        }
+
+        #button1:hover {
+            color: cornflowerblue;
+        }
+
+        #button2 {
+            background: #ffffff22;
+            font-size: 40px;
+            border-radius: 15px;
+            border-color: orangered;
+            font-family: Gadugi;
+            color: palevioletred;
+        }
+
+        #button2:hover {
+            color: sandybrown;
+        }
+
+        #desc {
+            font-size: 40px;
+            position: absolute;
+            left: 5cm;
+            right: 5cm;
+        }
+
+        #pt2 {
+            display: flex;
+        }
+
+        .txt1:hover {
+            color: wheat;
+        }
+
+        #pt3 {
+            position: absolute;
+            left: 7cm;
+            font-size: 30px;
+            background-color: #255a5e50;
+        }
+        #png3 {
+            position: absolute;
+            padding: 0;
+            display: block;
+            margin: 0 auto;
+            max-height: 100%;
+            max-width: 100%;
+        }
+        #pt4 {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+        }
+        #pt4h1 {
+            text-align: center;
+            font-size: 25mm;
+        }
+        #city2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+    <script>
+        function login() {
+            window.location.assign("login.html");
+        }
+        function scroll(a, b) {
+            window.scrollBy(a, b);
+        }
+    </script>
+</head>
+<body>
+    <div class="pos1">
+        <img src="Resources/hero.png" id="png1" />
+        <div id="hero">
+            <hr />
+            <img src="Resources/logo-white.png" id="logo" style="top: 8px; left: 64px; position: absolute;" /><hr />
+            <h1 class="txt1" style="top: 32px; left: 10cm; position: absolute;" onclick="document.getElementById('pt1').scrollIntoView({behavior: 'smooth'}, true)">Food delivery</h1>
+            <h1 class="txt1" style="top: 32px; left: 17cm; position: absolute;" onclick="document.getElementById('hiw').scrollIntoView({behavior: 'smooth'}, true)">How it works</h1>
+            <h1 class="txt1" style="top: 32px; left: 24cm; position: absolute;" onclick="document.getElementById('city').scrollIntoView({behavior: 'smooth'}, true)">Our cities</h1>
+            <h1 class="txt1" style="top: 32px; left: 31cm; position: absolute;" onclick="document.getElementById('pt4h1').scrollIntoView({behavior: 'smooth'}, true)">Plans</h1>
+            <h1 class="txt1" style="top: 32px; left: 38cm; position: absolute;" onclick="login()">Log in/Register</h1>
+        </div>
+        <hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+        <div id="welcome">
+            <h1 class="main" style="top: 12cm; left: 10cm; position: absolute;">Goodbye junk food.</h1>
+            <h1 class="main" style="top: 14.5cm; left: 10cm; position: absolute;">Hello super healthy meals.</h1>
+            <div id="button">
+                <input type="button" value="I'm hungry" id="button1" style="top: 18cm; left: 10cm; position: absolute;" onclick="login()" />
+                <input type="button" value="Show me more" id="button2" style="top: 18cm; left: 17cm; position: absolute;" onclick="document.getElementById('pt1').scrollIntoView({behavior: 'smooth'}, true)" />
+            </div>
+        </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <!--<img src="Resources/part2.png" id="png2"/>-->
+    <h1 style="text-align: center; font-size: 100px" id="pt1">GET FOOD FAST - NOT FAST FOOD</h1>
+    <h1 id="desc">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</h1>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div id="pt2">
+        <hr />
+        <div>
+            <h1 id="b1a">Up to 365 days/year</h1>
+            <h2>
+                Never cook again! We really<br />mean that. Our subscription<br />plans include up to 365 days<br />/year coverage. You can also<br />choose to order more flexibly<br />if that's your style.
+            </h2>
+        </div>
+        <hr />
+        <div>
+            <h1 id="b2a">Ready in 20 minutes</h1>
+            <h2>You're only twenty minutes<br />away from your delicious<br />and super healthy meals<br />delivered right to your home.<br />We work with the best chefs<br />in each town to ensure that<br />you're 100% happy.</h2>
+        </div>
+        <hr />
+        <div>
+            <h1 id="b3a">100% Organic</h1>
+            <h2>All our vegetables are<br />fresh, organic and local.<br />Animals are raised without<br />added hormones or antibiotics.<br />Good for your health, the<br />environment, and it also tastes<br />better!</h2>
+        </div>
+        <hr />
+        <div>
+            <h1 id="b4a">Order anything</h1>
+            <h2>We don't limit your creativity,<br />which means you can order<br />whatever you feel like. You<br />can also choose from our<br />menu containing over 100<br />delicious meals. It's up to you!</h2>
+        </div>
+        <hr />
+    </div>
+    <hr />
+    <img src="Resources/part3.png" id="png3" />
+    <br />
+    <div id="pt3">
+        <h1 style="left: 7cm;">
+            FAVORITE MEALS
+        </h1>
+        <h2>
+            1.	Korean bibimbap with egg and vegetables<br />
+            2.	Simple italian pizza with cherry tomatoes<br />
+            3.	Chicken breast steak with vegetables<br />
+            4.	Autumn pumpkin soup<br />
+            5.	Paleo beef steak with vegetables<br />
+            6.	Healthy baguette with egg and vegetables<br />
+            7.	Burger with cheddar and bacon<br />
+            8.	Granola with cherries and strawberries<br />
+        </h2>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <div style="font-size: 25px;" id="hiw">
+        <h1 style="text-align: center">HOW IT WORKS - Simple as 1 ; 2 ; 3 !</h1>
+        <div style="display: flex">
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Resources/app-iPhone.png" style="width: 20%" />
+            <hr /><hr /><hr /><hr /><hr /><hr />
+            <h2>
+                &nbsp&nbsp1. Choose the subscription plan that best fits<br />your needs and register today.<br /><br /><br /><br />
+                &nbsp&nbsp2. Order your delicious meal using our mobile<br />app or website. Or you can even call us!<br /><br /><br /><br />
+                &nbsp&nbsp3. Enjoy your meal after less than 20 minutes.<br />See you the next time!<br /><br /><br /><br />
+            </h2>
+            <hr /><hr /><hr /><hr /><hr /><hr /><hr /><hr />
+        </div>
+        <div style="text-align: center"><img src="Resources/gp.png" style="width: 5cm" /><img src="Resources/as.svg" style="width: 5.8cm" /></div>
+    </div>
+    <div style="font-size: 25px" id="city">
+        <h1 style="text-align: center">We're currently in these cities</h1>
+        <div id="city2">
+            <hr />
+            <div>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Resources/lisbon.jpg" style="width: 150px" />
+                <h2>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLisbon<br />
+                </h2>
+                <h3>
+                    &nbsp1600+ happy eaters<br />
+                    &nbsp60+ top chefs<br />
+                    &nbsp@omnifood_lx<br />
+                </h3>
+            </div>
+            <hr />
+            <div>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Resources/san-francisco.jpg" style="width: 150px" />
+                <h2>
+                    &nbsp&nbspSan Francisco<br />
+                </h2>
+                <h3>
+                    &nbsp3700+ happy eaters<br />
+                    &nbsp160+ top chefs<br />
+                    &nbsp@omnifood_sf<br />
+                </h3>
+            </div>
+            <hr />
+            <div>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Resources/berlin.jpg" style="width: 150px" />
+                <h2>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBerlin<br />
+                </h2>
+                <h3>
+                    &nbsp2300+ happy eaters<br />
+                    &nbsp110+ top chefs<br />
+                    &nbsp@omnifood_berlin<br />
+                </h3>
+            </div>
+            <hr />
+            <div>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="Resources/london.jpg" style="width: 150px" />
+                <h2>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLondon<br />
+                </h2>
+                <h3>
+                    &nbsp1200+ happy eaters<br />
+                    &nbsp50+ top chefs<br />
+                    &nbsp@omnifood_london<br />
+                </h3>
+            </div>
+            <hr />
+        </div>
+        </div>
+    <br /><br /><br /><br />
+    <div style="font-size: 25px">
+        <h1 style="text-align: center">Our customers can't live without us!</h1>
+        <div style="display: flex">
+            <img src="Resources/customer-1.jpg" style="width: 15%" />
+            <h2>
+                Omni food is just just awesome! I just launched a startup which leaves me with no time for cooking,<br />so Omnifood is alife-saver. Now that I got used to it, I couldn't live without my daily meals!
+            </h2>
+        </div>
+        <h3 style="text-align: right">Alberto Duncan&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+        <div style="display: flex">
+            <img src="Resources/customer-2.jpg" style="width: 15%" />
+            <h2>
+                Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food<br />delivery here in Lisbon, but no onecomes even close to Omifood. Me and my family are so in love!
+            </h2>
+        </div>
+        <h3 style="text-align: right">Joana Silva&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+        <div style="display: flex">
+            <img src="Resources/customer-3.jpg" style="width: 15%" />
+            <h2>
+                I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and<br />ended up with Omnifood. Bestfood delivery service in the Bay Area. Keep up the great work!
+            </h2>
+        </div>
+        <h3 style="text-align: right">Milton Chapman&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
+    </div>
+    <h1 id="pt4h1">Start eating healthy today!</h1>
+    <div id="pt4">
+        <hr />
+        <div style="background-color: lightgrey; border: solid; width: 7cm">
+            <h1>Starter</h1>
+            <h2>$19/meal</h2>
+            <br />
+            <h3>✔️1 meal</h3>
+            <h3>✔️Order from 8A.M to 12P.M</h3>
+            <h3>✔️Free devilery</h3>
+        </div>
+        <hr />
+        <div style="background-color: lightgrey; border: solid; width: 7cm">
+            <h1>Pro</h1>
+            <h2>$149/month</h2>
+            <h2 style="font-size: 20px">Thats only $14.9/meal</h2>
+            <br />
+            <h3>✔️1 meal for 10 days/month</h3>
+            <h3>✔️Order 24/7</h3>
+            <h3>✔️Access to newest creations</h3>
+            <h3>✔️Free devilery</h3>
+        </div>
+        <hr />
+        <div style="background-color: lightcoral; border: solid; width: 7cm">
+            <h1>Premium</h1>
+            <h2>$399/month</h2>
+            <h2 style="font-size: 20px">Thats only $13.3/meal</h2>
+            <br />
+            <h3>✔️1 meal every day</h3>
+            <h3>✔️Order 24/7</h3>
+            <h3>✔️Access to newest creations</h3>
+            <h3>✔️Free devilery</h3><br />
+        </div>
+        <hr />
+    </div>
+</body>
+</html>
