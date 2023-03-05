@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>localStorage</title>
+	<script src="index.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sniglet&display=swap');
+		body {
+			font-family: Sniglet, cursive;
+			width: 10cm;
+			margin: auto;
+			text-align: center;
+		}
+		::placeholder {
+			font-family: Montserrat, sans-serif;
+		}
+		input {
+			width: 9cm;
+			height: 7mm;
+			font-family: Montserrat, sans-serif;
+		}
+		h3 {
+			font-family: Calibri;
+		}
+	</style>
+</head>
+<body>
+	<h1>LOCAL STORAGE</h1>
+	<hr>
+	<input type="text" placeholder="Save" id="v" /><br/><br/>
+	<input type="text" placeholder="In key" id="k" /><br/><br/>
+	<input type="button" value="SAVE" onclick="save()" /><br/>
+	<hr/>
+	<input type="text" placeholder="Remove" id="k2" /><br/><br/>
+	<input type="button" value="DELETE" onclick="del()" /><br/><br/>
+	<input type="button" value="CLEAR" onclick="delAll()" /><br/>
+	<hr/>
+	<input type="text" placeholder="Load" id="k3" /><br/><br/>
+	<input type="button" value="LOAD" onclick="load()" /><br/><br/>
+	<input type="button" value="CONSOLE LOG" onclick="log()" /><br/>
+	<h3 id="l"></h3>
+	<hr/>
+</body>
+</html>

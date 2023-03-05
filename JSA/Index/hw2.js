@@ -1,4 +1,4 @@
-console.log("%c" + "HW2.JS", "font-size: 36px; color: #7289DA");
+console.log("%cHW2.JS", "font-size: 36px; color: #aaaaaa");
 var frnit = [["Grapee", getRandomInt(15)], ["Apble", getRandomInt(15)], ["Panana", getRandomInt(15)]];
 for (a = 0; a <= 2; a++) {
 	console.log(frnit[a]);

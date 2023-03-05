@@ -128,6 +128,19 @@
             display: flex;
             flex-wrap: wrap;
         }
+        #cos {
+            width: 40cm;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #nav1 {
+            display: flex;
+            color: white;
+        }
+
+        .nav1h:hover {
+            color: darkgoldenrod;
+        }
     </style>
     <script>
         function login() {
@@ -276,26 +289,26 @@
             </div>
             <hr />
         </div>
-        </div>
+    </div>
     <br /><br /><br /><br />
-    <div style="font-size: 25px">
+    <div style="font-size: 25px" id="cos">
         <h1 style="text-align: center">Our customers can't live without us!</h1>
-        <div style="display: flex">
-            <img src="Resources/customer-1.jpg" style="width: 15%" />
+        <div style="display: flex; background-color: cornflowerblue; border: solid 3px; border-radius: 5px">
+            <img src="Resources/customer-1.jpg" style="width: 30%" />
             <h2>
                 Omni food is just awesome! I just launched a startup which leaves me with no time for cooking,<br />so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
             </h2>
         </div>
         <h3 style="text-align: right">Alberto Duncan&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-        <div style="display: flex">
-            <img src="Resources/customer-2.jpg" style="width: 15%" />
+        <div style="display: flex; background-color: lightcoral; border: solid 3px; border-radius: 5px">
+            <img src="Resources/customer-2.jpg" style="width: 30%" />
             <h2>
                 Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food<br />delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
             </h2>
         </div>
         <h3 style="text-align: right">Joana Silva&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h3>
-        <div style="display: flex">
-            <img src="Resources/customer-3.jpg" style="width: 15%" />
+        <div style="display: flex; background-color: greenyellow; border: solid 3px; border-radius: 5px">
+            <img src="Resources/customer-3.jpg" style="width: 30%" />
             <h2>
                 I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and<br />ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
             </h2>
@@ -305,7 +318,7 @@
     <h1 id="pt4h1">Log in to start eating healthy today!</h1>
     <div id="pt4">
         <hr />
-        <div style="background-color: lightgrey; border: solid; width: 7cm">
+        <div style="background-color: lightgrey; border: solid; width: 7cm; border-radius: 50px">
             <h1>Starter</h1>
             <h2>$19/meal</h2>
             <br />
@@ -314,7 +327,7 @@
             <h3>✔️Free devilery</h3>
         </div>
         <hr />
-        <div style="background-color: lightgrey; border: solid; width: 7cm">
+        <div style="background-color: lightgrey; border: solid; width: 7cm; border-radius: 50px">
             <h1>Pro</h1>
             <h2>$149/month</h2>
             <h2 style="font-size: 20px">Thats only $14.9/meal</h2>
@@ -325,7 +338,7 @@
             <h3>✔️Free devilery</h3>
         </div>
         <hr />
-        <div style="background-color: lightcoral; border: solid; width: 7cm">
+        <div style="background-color: lightcoral; border: solid; width: 7cm; border-radius: 50px">
             <h1>Premium</h1>
             <h2>$399/month</h2>
             <h2 style="font-size: 20px">Thats only $13.3/meal</h2>
@@ -336,6 +349,26 @@
             <h3>✔️Free devilery</h3><br />
         </div>
         <hr />
+    </div>
+    <br />
+    <div style="background-color: dimgrey">
+        <div style="" id="nav1">
+            <hr />
+            <h2 onclick="document.getElementById('pt1').scrollIntoView({behavior: 'smooth'}, true)" class="nav1h">About us</h2><hr />
+            <h2 onclick="document.getElementById('pt1').scrollIntoView({behavior: 'smooth'}, true)" class="nav1h">Blog</h2><hr />
+            <h2 onclick="document.getElementById('cos').scrollIntoView({behavior: 'smooth'}, true)" class="nav1h">Press</h2><hr />
+            <h2 onclick="document.getElementById('hiw').scrollIntoView({behavior: 'smooth'}, true)" class="nav1h">Android App</h2><hr />
+            <h2 onclick="document.getElementById('hiw').scrollIntoView({behavior: 'smooth'}, true)" class="nav1h">iOS App</h2><hr />
+            <h2 onclick="window.location.assign('login.html')" class="nav1h">Log in</h2><hr />
+        </div>
+        <hr /><hr />
+        <div style="background-color: dimgrey; display: flex" onclick="document.getElementById('city').scrollIntoView({behavior: 'smooth'}, true)">
+            <hr />
+            <img width="100" src="data:image/jpeg;base64,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" /><hr />
+            <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png" /><hr />
+            <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Google_Plus_logo_%282015-2019%29.svg/1200px-Google_Plus_logo_%282015-2019%29.svg.png" /><hr />
+            <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" /><hr />
+        </div>
     </div>
 </body>
 </html>

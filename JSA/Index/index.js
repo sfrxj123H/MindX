@@ -1,4 +1,4 @@
-﻿console.log("%c" + "INDEX.JS", "font-size: 36px; color: #7289DA");
+﻿console.log("%cINDEX.JS", "font-size: 36px; color: darkcyan");
 b = 1;
 c = 1;
 h = 0;
@@ -67,3 +67,28 @@ for (n = 0; n < diem_toan.length; n++) {
 trung_binh = sum / diem_toan.length;
 console.log("Điểm toán: " + trung_binh)
 console.log("Các điểm toán: " + String(diem_toan[0]) + ", " + String(diem_toan[1]) + ", " + String(diem_toan[2]) + ", " + String(diem_toan[3]) + ", " + String(diem_toan[4]));
+o = {
+    name: "Khá Bảnh",
+    gender: "nam",
+    crime: "nghiện ma túy"
+}
+q = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+for (p in o) {
+    console.log(p + ": " + o[p]);
+}
+for (p of q) {
+    console.log(p);
+}
+//New function for ES6
+let sús = (/*arg0, arg1, arg2, ...*/) => {
+    console.log("sussy baka" /*arg0, arg1, arg2, ...*/)
+/*    return //arg0*/
+}
+sús()
+let sus2 = (a, b) => {
+    return (a + b);
+}
+console.log(sus2(5, 4));
+let ngu = 100
+let nguc = (ngu > 80) ? () => console.log("Ngu thật") : () => console.log("Chưa ngu đâu");
+nguc();
