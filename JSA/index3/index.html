@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Index</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="all">
+        <h1>Find x: ax + b = 0</h1>
+        <h2>Input a and b</h2>
+        <label for="a">Input a</label>
+        <input type="number" value="0" name="a" id="1" onchange="equation(document.getElementById(1).value, document.getElementById(2).value)" />
+        <br />
+        <label for="b">Input b</label>
+        <input type="number" value="0" name="b" id="2" onchange="equation(document.getElementById(1).value, document.getElementById(2).value)" />
+        <h1 id="r"></h1>
+        <hr />
+        <h1>Hypotenuse/Leg</h1>
+        <label for="a 1">Line 1</label>
+        <input type="number" name="a 1" id="c" onchange="triangle(document.getElementById('c').value, document.getElementById('d').value)" />
+        <br />
+        <label for="a 2">Line 2</label>
+        <input type="number" name="a 2" id="d" onchange="triangle(document.getElementById('c').value, document.getElementById('d').value)" />
+        <h3 id="s"></h3>
+        <h5>*One of those lines must be hypotenuse.<br />*This is RIGHT triangle calculator.</h5>
+    </div>
+</body>
+</html>
