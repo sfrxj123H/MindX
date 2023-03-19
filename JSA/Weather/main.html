@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="http://openweathermap.org/img/wn/10d@2x.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="main">
+                <div class="search">
+                    <div class="s-container">
+                        <i class="fa fa-search search-icon"></i>
+                        <input type="search" id="search" placeholder="Search" />
+                    </div>
+                </div>
+                <br /><br />
+                <div class="info">
+                    <h2 id="location">___</h2>
+                    <h1 id="weather">___</h1>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" />
+                    <h1 id="temperature">___</h1>
+                </div>
+                <br /><br />
+                <div class="addition">
+                    <div class="sun">
+                        <hr class="inv" />
+                        <div class="row">
+                            <h3>Sun rise</h3>
+                            <h4>___</h4>
+                        </div>
+                        <hr class="inv" />
+                        <div class="row">
+                            <h3>Sun set</h3>
+                            <h4>___</h4>
+                        </div>
+                        <hr class="inv" />
+                    </div>
+                    <div class="other">
+                        <hr class="inv" />
+                        <div class="row">
+                            <h3>Humidity</h3>
+                            <h4>___</h4>
+                        </div>
+                        <hr class="inv" />
+                        <div class="row">
+                            <h3>Wind</h3>
+                            <h4>___</h4>
+                        </div>
+                        <hr class="inv" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

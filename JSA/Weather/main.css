@@ -1,0 +1,75 @@
+﻿#search {
+    border: none;
+    width: 8cm;
+    height: 30px;
+    background-color: transparent;
+    justify-content: center;
+}
+.search {
+    width: 9cm;
+    height: 30px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid white;
+    background: none;
+}
+.search-icon {
+    margin-right: 5px;
+    left: 0;
+    cursor: pointer;
+}
+body {
+    background-color: seagreen;
+    color: white;
+}
+#search::placeholder {
+    color: white;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 80px 50px;
+}
+.addition {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+.sun {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.other {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.inv {
+    clear: both;
+    visibility: hidden;
+}
+body {
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/003/680/429/large/nova-ashbell-sc01-03.jpg?1476361405");
+}
+.main {
+    background-image: url("https://media.giphy.com/media/G0Odfjd78JTpu/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10cm;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    top: 20%;
+    bottom: 20%;
+}
