@@ -1,12 +1,44 @@
 ﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Earth day</title>
-    <link href="main.scss" rel="stylesheet" />
-    <script src="main.js"></script>
-</head>
-<body>
+<html lang="en" id="everything">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Day!</title>
+    <link href="src/css/main.css" rel="stylesheet" />
+    <link href="src/css/global.css" rel="stylesheet" />
+    <link href="account.html" rel="html" />
+    <link href="login.html" rel="html" />
+    <link href="signup.html" rel="html" />
+</head>
+
+<body>
+    <div id="upbar"></div>
+    <h2 id="title">Earth day</h2>
+    <p id="subtitle">April 22</p>
+    <h2 id="account"></h2>
+    <img onclick="sessionStorage.user=''; window.location.assign('login.html')" id="signout" src="img/logout.png" title="Sign out"/>
+    <a id="manage" onclick="window.location.assign('account.html')" style="font-size: 150%">Manage account</a>
+    <div id="google_translate_element"></div><br><br><br>
+    <div id="main"></div><br><br>
+    <div id="feedback">
+        <h1>FEEDBACK</h1>
+        <form action="https://api.sheetmonkey.io/form/9xfWHtWvPdiouEFCY2JMy8" method="post">
+            <h2>Your name</h2>
+            <input type="text" name="name" /><br>
+            <h2>Give us some feedback!</h2>
+            <textarea type="text" id="iFeedback" name="Feedback"></textarea><br>
+            <input type="submit" value="Send!📤"/><br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" /><br>
+        </form>
+    </div><br><br>
+    <div id="main2">
+        <h1>SOURCE CODE</h1>
+        <textarea type="text" id="iControl" oninput="mainDataChange()"></textarea><br>
+        <input type=button value="Reset" onclick="resetData()"id="reset" /><br><br>
+    </div><br><br>
 </body>
 </html>
+<script src="src/js/main.js"></script>
+<script type="text/javascript" src="src/js/translator copy.js"></script>

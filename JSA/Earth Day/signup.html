@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" id="everything">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Earth Day</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel='stylesheet'>
+    <link href="src/css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="backon">
+    </div>
+    <div id="all">
+        <div id="container">
+            <h1 style="text-decoration: underline">
+                REGISTER
+            </h1>
+            <label>
+                Username:<br>
+                <input type="text" name="Username" id="user" class="field" autocomplete="off" autocapitalize="off">
+            </label><br>
+            <label>Set Password: <br><input type="password" name="Password" id="pass1" class="field" autocomplete="off"
+                    autocapitalize="off" /></label><br>
+            <label>Repeat Password: <br><input type="password" name="Password" id="pass2" class="field" autocomplete="off"
+                    autocapitalize="off" /></label><br><br>
+            <div class="passshow"></div><br>
+            <label><input type="checkbox" id="show" checked="true" />Show account</label><br>
+            <input type="button" value="REGISTER" onclick="register_check()" class="field" id="ok" />
+            <h3 id="warning"></h3>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="src/js/signup.js"></script>

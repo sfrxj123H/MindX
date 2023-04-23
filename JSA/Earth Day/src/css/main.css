@@ -1,0 +1,187 @@
+﻿body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 125%;
+    background-color: paleturquoise;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+#upbar {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #303030;
+    right: -10px;
+    align-items: center;
+    height: 120px;
+}
+
+#account {
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: -30px;
+}
+
+#signout {
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: -30px;
+}
+
+#manage {
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    text-decoration: underline;
+}
+
+#main {
+    color: white;
+    text-align: center;
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 15px;
+    width: 25cm;
+    top: 150px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: #303030;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#title {
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: -30px;
+}
+
+#subtitle {
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 5px;
+    font-size: 150%;
+}
+
+.a {
+    text-decoration: underline;
+}
+
+.a:hover {
+    color: red;
+}
+
+#signout {
+    width: 40px;
+    color: red;
+    top: 20px;
+    right: 40px;
+}
+
+#manage:hover {
+    color: lightcoral;
+}
+
+#iControl {
+    width: 20cm;
+    height: 5cm;
+    resize: none;
+    width: 20cm;
+    height: 15.5cm;
+    font-size: 20px;
+    border: solid blue;
+    border-radius: 15px;
+    background-color: aqua;
+    color: blue;
+}
+
+#iControl:hover {
+    background-color: rosybrown;
+}
+
+#reset {
+    width: 20cm;
+    height: 5cm;
+    resize: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border: solid blue;
+    border-radius: 15px;
+    background-color: aqua;
+    color: blue;
+}
+
+#reset:hover {
+    background-color: rosybrown;
+}
+
+#main2 {
+    color: white;
+    text-align: center;
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 15px;
+    width: 25cm;
+    top: 55cm;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: #303030;
+}
+
+#feedback {
+    color: white;
+    text-align: center;
+    background-color: white;
+    border: black solid 3px;
+    border-radius: 15px;
+    width: 25cm;
+    top: 55cm;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    color: #303030;
+}
+
+#iFeedback {
+    width: 20cm;
+    height: 5cm;
+    resize: none;
+    width: 20cm;
+    height: 5cm;
+    font-size: 20px;
+    border: solid blue;
+    border-radius: 15px;
+    background-color: aqua;
+    color: blue;
+}
+
+#feedback input {
+    width: 20cm;
+    height: 5cm;
+    resize: none;
+    width: 5cm;
+    height: 40px;
+    font-size: 20px;
+    border: solid blue;
+    border-radius: 15px;
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+}
+
+#iFeedback:hover {
+    background-color: rosybrown;
+}
+
+#feedback input:hover {
+    background-color: rosybrown;
+}

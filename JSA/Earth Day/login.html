@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" id="everything">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to Earth Day</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel='stylesheet'>
+    <link href="src/css/login.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="all">
+        <div id="container">
+            <h1 style="text-decoration: underline">
+                SIGN IN
+            </h1>
+            Username:<br>
+            <select id="shown" onchange="shown_check()" class="field"></select><br>
+            <label>
+                <input type="text" name="Username" id="user" class="field" autocomplete="off" autocapitalize="off" />
+            </label><br>
+            <label>Password: <br><input type="password" name="Password" id="pass" class="field" autocomplete="off"
+                    autocapitalize="off" /></label><br><br>
+            <div class="passshow"></div>
+                <input type="button" value="OK" onclick="login_check()" class="field" id="ok" /><br><br>
+                <label>No account? <br><input type="button" onclick="addd();" value="Create an account"
+                        class="field" id="add"/></label><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="src/js/login.js"></script>

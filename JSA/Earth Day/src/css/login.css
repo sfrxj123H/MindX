@@ -1,0 +1,65 @@
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 125%;
+    background-image: url("https://images.news18.com/ibnlive/uploads/2022/05/karman-line-165164534016x9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#all {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#container {
+    position: relative;
+    background-color: white;
+    width: 10cm;
+    text-align: center;
+    border: solid black;
+    border-radius: 15px;
+    left: -50%;
+}
+
+.field {
+    width: 250px;
+    height: 30px;
+    border: solid blue;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: seagreen;
+    font-size: 100%;
+    background-color: aqua;
+}
+
+input {
+    font-size: 100%;
+}
+
+#ok {
+    background-color: forestgreen;
+    color: white;
+    border-color: black;
+    width: 150px
+}
+
+input:hover {
+    border: solid red;
+    color: grey;
+    background-color: wheat;
+}
+
+#ok:hover {
+    border: solid darkolivegreen;
+    color: indigo;
+    background-color: goldenrod;
+}
+
+#shown {
+    height: 40px;
+    font-size: 80%;
+}

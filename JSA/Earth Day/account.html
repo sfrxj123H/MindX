@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" id="everything">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel='stylesheet'>
+    <link href='src/css/account.css' rel='stylesheet /'>
+    <link href="src/css/global.css" rel="stylesheet" />
+</head>
+
+<body>
+    <input type="button" value="&#8592Back" class="field" onclick="window.location.assign('main.html')" style="width: 100px; height: 50px"/>
+    <div id="google_translate_element"></div>
+    <div id="all">
+        <div id="container">
+            <h1 style="text-decoration: underline">
+                ACCOUNT
+            </h1>
+            <h2 id="list">
+            </h2>
+            <div class="admin">
+            </div>
+            <label>Set Password: <br><input type="password" name="Password" id="pass1" class="field" autocomplete="off"
+                    autocapitalize="off" /></label><br>
+            <label>Repeat Password: <br><input type="password" name="Password2" id="pass2" class="field" /></label><br>
+            <div class="admin2">
+            </div><br>
+            <div class="admin3">
+            </div>
+            <label><input type="checkbox" id="show" checked="true" />Show account</label><br>
+            <input type="button" value="Delete" onclick="delete_check()" class="field" id="cancel">
+            <input type="button" value="OK" onclick="signup_check()" class="field" id="ok" />
+            <h3 id="warning"></h3>
+            <input type="button" onclick="window.location.reload();" value="Reset" class="field" style="width: 150px" />
+            <input type="button" onclick="confirm_check()" value="Save" class="field" style="width: 150px" /><br><br>
+            <div id="showcreate"></div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="src/js/account.js"></script>
+<script src="src/js/translator copy.js"></script>
