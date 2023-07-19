@@ -1,1 +1,1 @@
-console.log(document.head.title.innerText);
+//có 6 kiểu dữ liệu: string (""); number ()

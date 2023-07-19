@@ -1,0 +1,38 @@
+#list {
+    display: grid;
+	grid-template-columns: 12.5cm 12.5cm 12.5cm;
+    flex-wrap: nowrap;
+}
+#sp {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    width: 38cm;
+}
+#list>div {
+    width: 12cm;
+    background-color: grey;
+    border: solid black;
+    border-radius: 15px;
+}
+img {
+    width: 7cm;
+    height: 7cm;
+    border: solid black;
+    border-radius: 15px;
+}
+#search {
+	width: 15cm;
+	height: 2cm;
+	font-size: 50px;
+	border: solid black;
+	border-radius: 10px;
+}
+.enter {
+	width: 3cm;
+	height: 2cm;
+	font-size: 50px;
+	border: solid black;
+	border-radius: 10px;
+}

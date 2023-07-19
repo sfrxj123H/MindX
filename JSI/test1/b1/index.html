@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+	<link rel=stylesheet href="index.css" />
+</head>
+<body>
+	<div id="container" >
+		<br><input type=text id="nums" /><br><br>
+		<div id="num" >
+			<div class=num_grid ><h3>NUMBERS</h3></div>
+			<div class=num_grid onclick="add(1)" ><h3>1</h3></div>
+			<div class=num_grid onclick="add(2)" ><h3>2</h3></div>
+			<div class=num_grid onclick="add(3)" ><h3>3</h3></div>
+			<div class=num_grid onclick="add(4)" ><h3>4</h3></div>
+			<div class=num_grid onclick="add(5)" ><h3>5</h3></div>
+			<div class=num_grid onclick="add(6)" ><h3>6</h3></div>
+			<div class=num_grid onclick="add(7)" ><h3>7</h3></div>
+			<div class=num_grid onclick="add(8)" ><h3>8</h3></div>
+			<div class=num_grid onclick="add(9)" ><h3>9</h3></div>
+			<div class=num_grid onclick="add(0)" ><h3>0</h3></div>
+		</div><br>
+		<div id="sign" >
+		<div class=num_grid ><h3>SIGNS</h3></div>
+			<div class=sign_grid onclick="add('+')" ><h3>+</h3></div>
+			<div class=sign_grid onclick="add('-')" ><h3>-</h3></div>
+			<div class=sign_grid onclick="add('*')" ><h3>x</h3></div>
+			<div class=sign_grid onclick="add('/')" ><h3>÷</h3></div>
+			<div class=sign_grid onclick="add('(')" ><h3>(</h3></div>
+			<div class=sign_grid onclick="add(')')" ><h3>)</h3></div>
+			<div class=sign_grid onclick="del()" ><h3><--</h3></div>
+		</div><br>
+		<input type=button value=Check class=check onclick="check()" />
+		<input type=button value=Reload class=check onclick="window.location.reload()" /><br><br>
+	</div>
+</body>
+</html>
+<script src="index.js" ></script>

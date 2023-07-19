@@ -1,0 +1,27 @@
+#container {
+	background-color:grey;
+	border:solid;
+	width:10cm;
+	text-align: center;
+}
+#nums {
+	background-color:grey;
+	border:black solid;
+	width:9.5cm;
+	text-align:right;
+	color: white;
+	height: 1cm;
+}
+#num, #sign {
+	display:grid;
+	grid-template-columns: 3.33cm 3.33cm 3.33cm;
+}
+.num_grid, .sign_grid {
+	border:solid;
+}
+.check {
+	background-color:grey;
+	border:black solid;
+	width:4.9cm;
+	color:white;
+}

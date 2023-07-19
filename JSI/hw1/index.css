@@ -1,0 +1,52 @@
+#list {
+    display: grid;
+	grid-template-columns: auto auto auto;
+    flex-wrap: nowrap;
+}
+#sp {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-self: center;
+    width: 38cm;
+}
+#list>div {
+    width: 12cm;
+    background-color: grey;
+    border: solid black;
+    border-radius: 15px;
+}
+img {
+    width: 7cm;
+    height: 7cm;
+    border: solid black;
+    border-radius: 15px;
+}
+#list>div>input {
+    background-color: red;
+    width: 10cm;
+    border: solid black;
+    border-radius: 15px;
+    color: limegreen;
+    height: 1.5cm;
+    font-size: 40px;
+}
+#buy>input {
+    background-color: red;
+    width: 15cm;
+    border: solid black;
+    border-radius: 15px;
+    color: limegreen;
+    height: 1.5cm;
+    font-size: 40px;
+}
+#buy>input::placeholder {
+    color: blue;
+}
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
