@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./page files/css/index.css" />
+   <title>Home - EzFood</title>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script type="text/javascript">(function () { emailjs.init('3IqX7WG8iGDXXf1H5'); })();</script>
+</head>
+
+<body>
+   <div id="container">
+      <div id="headers-page">
+         <div style="line-height: 0.3">
+            <h2 style="color: lightblue; font-family: 'Courier New', Courier, monospace;">EZFOOD</h4>
+            <h6 style="font-family: 'Courier New', Courier, monospace; color: lightcoral">Anh Phong</p>
+         </div>
+         <h4 onclick="document.querySelector('#data').scrollIntoView()" style="text-decoration: underline;" id="ex-f">Explore foods</h4>
+         <h4><a href="account.html">Account</a></h4>
+      <div id="main-page-1">
+         <h1>Welcome to the world of EzFood</h1>
+         <h3>Made by Anh Phong</h3>
+         <p style="font-size: 75%;">(This website is still BETA, you can't buy anything using the site because this site is only created for template)</p>
+      </div>
+      <div id="main-page-2">
+         <h2>We have the "homemade" foods being ready to deliver right to your house!</h2>
+         <h3>CHEAP ... but DELICIOUS</h3>
+      </div>
+      <div id="main-page-3">
+         <div>
+            <br>
+            <h2>Special offer!</h2>
+            <h3>10 Fried Chickens just for $7.99 !!!</h3>
+            <button type="button" class="big-buy-button" onclick="buyVerification()">Buy now!</button>
+            <br><br>
+         </div>
+      </div>
+      <div id="data">
+         <div id="food-list">
+            <h2>Our Foods</h2>
+            <div id="food-data"></div>
+         </div>
+         <div id="drinks-list">
+            <h2>Our Drinks</h2>
+            <div id="drinks-data"></div>
+         </div>
+      </div>
+   </div>
+</body>
+<script src="./page files/js/index.js"></script>
+
+</html>

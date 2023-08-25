@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account management - EzFood</title>
+    <link rel="stylesheet" href="./page files/css/pages.css" />
+</head>
+<body>
+    <div id="container">
+      <h1>Account management</h1>
+      <h2><a href="email.html" style="color: white">Change email</a></h2>
+      <h2><a href="password.html" style="color: white">Change password</a></h2>
+      <h2><a href="login.html" onclick="localStorage.removeItem('loginUser')" style="color: white">Log out</a></h2>
+      <button><a href="index.html" style="text-decoration: none;">Homepage</a></button><br><br>
+    </div>
+</body>
+</html>
+<script>
+   let user = localStorage.loginUser
+   if (user == null || user.length < 1) {
+      window.location.assign("./login.html")
+   }
+</script>

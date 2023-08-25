@@ -1,44 +1,55 @@
-class InputCompoment{
-    $container;
-    $label;
-    $containerInput;
-    $input;
-    $error;
+class InputComponent {
+  $container;
+  $label;
+  $containerInput;
+  $input;
 
-    constructor(label, name, id, type){
-        this.$container = document.createElement("div")// khoiw tao the div
-        this.$container.classList.add("row", "d-flex", "flex-wrap", "mt-4")
+  $error;
 
-        this.$label = document.createElement("label")
-        this.$label.classList.add("col-4","label-input")
-        this.$label.innerText = label;
+  //   $name;
+  //   $type;
+  //   $id;
 
-        this.$containerInput = document.createElement("div")
-        this.$containerInput.classList.add("col-8")
+  constructor(label, name, id, type) {
+    this.$container = document.createElement("div");
+    this.$container.classList.add("row", "d-flex", "flex-wrap", "mt-4");
 
-        this.$input = document.createElement("input")
-        this.$input.classList.add("form-control")
-        this.$input.type = type;
-        this.$input.name = name;
-        this.$input.id = id;
+    this.$containerInput = document.createElement("div");
+    this.$containerInput.classList.add("col-8");
 
-        this.$error = document.createElement("div")
-        this.$error.classList.add("error", "mt-2", "d-none")
+    this.$label = document.createElement("label");
+    this.$label.classList.add("col-4", "label-input");
+    this.$label.innerText = label;
 
-    }
-    setError(message) {
-        this.$error.innerText = message;
-        this.$error.classList.remove("d-none");
-        this.$error.classList.add("d-block");
-      }
+    this.$input = document.createElement("input");
+    this.$input.classList.add("form-control");
+    this.$input.type = type;
+    this.$input.id = id;
+    this.$input.name = name;
 
-    render(){
-        this.$container.append(this.$label, this.$containerInput)
-       
-        this.$containerInput.append(this.$input,this.$error)
-      
-        return this.$container;
-    }
+    this.$error = document.createElement("div");
+    this.$error.classList.add("error", "mt-2", "d-none");
+  }
 
+  setAttriBute(name, value) {
+    this.$input.setAttribute(name, value)
+  }
+
+  setEventListener(event, callbackFn) {
+    this.$input.addEventListener(event, callbackFn)
+  }
+
+  setError(message) {
+    this.$error.innerText = message;
+    this.$error.classList.remove("d-none");
+    this.$error.classList.add("d-block");
+  }
+
+  render() {
+    this.$container.append(this.$label, this.$containerInput);
+    this.$containerInput.append(this.$input, this.$error);
+    return this.$container;
+  }
 }
-export default InputCompoment ;
+
+export default InputComponent;

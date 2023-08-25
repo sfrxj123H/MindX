@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Admin menu</title>
+   <link rel="stylesheet" href="./page files/css/admin.css" />
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+
+<body>
+   <div id="container">
+      <button><a href="index.html" style="text-decoration: none;">Homepage</a></button><br>
+      <h1>Admin menu</h1>
+
+      <h3>Add food</h3>
+      <label>Name: <input type="text" id="foodName" /></label><br>
+      <label>Price (by USD): <input type="number" id="foodPrice" /></label><br>
+      <label>Image link: <input type="text" id="foodImg" /></label><br>
+      <label>Is Food (0 or 1): <input type="number" id="foodType" min="0" max="1" /></label><br>
+      <button onclick="addData()">Add!</button><br>
+
+      <h3>Delete food</h3>
+      <label>Food id: <input type="text" id="foodId" /></label><br>
+      <button onclick="deleteData()">Delete!</button><br>
+
+      <h3>View all foods</h3><br>
+      <button type="button" onclick="document.querySelector('#viewButton').innerHTML = 'Regenerate!'; viewData()"
+         id="viewButton">Generate!</button>
+      <h4 id="viewData"></h4>
+   </div>
+</body>
+
+</html>
+<script src="./page files/js/admin.js"></script>

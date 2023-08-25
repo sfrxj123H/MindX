@@ -1,5 +1,4 @@
 class ButtonComponent {
-  
   $btn;
   constructor(text, classList, type, callBack) {
     this.$btn = document.createElement("button");
