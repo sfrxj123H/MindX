@@ -44,7 +44,7 @@ export function LoginCheck(handle) {
             localStorage.loginUser = JSON.stringify([user, pass])
             document.querySelector(".account-form").submit
             error = ""
-            window.location.assign("./homepage.html")
+            window.location.assign("./index.html")
         }
     }
     document.querySelector(".error").innerHTML = error;
