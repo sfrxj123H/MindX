@@ -34,7 +34,14 @@ export function LoginCheck(handle) {
                 }
             })
         if (valid == undefined) {
-            error = "An error occurred."
+            if (confirm("An error occurred!\nDo you want to save your login data instead?")) {
+                localStorage.setItem("loginUser", JSON.stringify([user, pass]))
+                error = "Saved."
+                window.location.assign("./index.html")
+            }
+            else {
+                error = "An error occurred."
+            }
             document.querySelector(".error").innerHTML = error;
         }
         else if (!valid) {
