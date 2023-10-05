@@ -21,8 +21,11 @@ async function addData() {
    if (field == 0) {
       isFood = false
    }
-   else {
+   else if (field == 1) {
       isFood = true
+   }
+   else {
+      isFood = null
    }
 await db.collection("menu").add({
    name: foodName,
