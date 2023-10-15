@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>To do list</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>TO DO</h1>
+        <div id="data">
+
+        </div>
+        <div id="function">
+            <input type="text" id="todoName">
+            <button type="button" onclick="addTodo()">Add todo</button>
+        </div>
+        <h2>Notify</h2>
+        <h3 id="noti"></h3>
+        <h2>Config</h2><br>
+        <input type="text" placeholder="API Key" value="AIzaSyBBr4FRElLfSDRxz8u8i3vA-EFXLpB35hE" id="fb1"><br>
+        <input type="text" placeholder="AUTH Domain" value="nextgen-anhphong.firebaseapp.com" id="fb2"><br>
+        <input type="text" placeholder="Project ID" value="nextgen-anhphong" id="fb3"><br>
+        <input type="text" placeholder="Storage Bucket" value="nextgen-anhphong.appspot.com" id="fb4"><br>
+        <input type="text" placeholder="Messaging sender ID" value="746068367175" id="fb5"><br>
+        <input type="text" placeholder="App ID" value="1:746068367175:web:72311512ac9c98cf5e5e62" id="fb6"><br>
+        <input type="text" placeholder="Measurement ID" value="G-GTGMLHHSYE" id="fb7">
+    </div>
+</body>
+
+</html>
+<script src="index.js"></script>
